@@ -1,0 +1,241 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+    --light:#ecf0f1;
+    --dark: #2c3e50;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+.navbar {
+    background-color: var(--primary);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    display:flex; align-items: center; justify-content: space-between;
+}
+.nav-link {
+    align-items: center;
+}
+ 
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white !important;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+    
+}
+.navbar-nav .nav-link:hover {
+color: var(--secondary) !important;
+}
+.navbar-toggler-icon {
+    border-color: white;
+}
+
+ .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url("codegenbanner.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+ }
+ .hero h1 {
+    font-size:  3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+   
+ }
+ .hero p {
+    font-size:  1.2rem;
+    margin-bottom: 30px;
+
+ }
+ .brn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+ }
+ .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+ }
+ .section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+ }
+ .section-title h2::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background: var(--secondary);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .service-card { 
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 100%;
+ }
+ .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px rgba(0, 0, 0, 0.15);
+ }
+ .service-icon {
+    font-size: 3rem;
+    color:var(--secondary);
+    margin-bottom: 20px;
+ }
+
+
+ .about-section {
+    background-color: var(--light);
+    padding: 100px 0; 
+ }
+.stats {
+    background: var(--primary);
+    color: white;
+    padding: 80px 0;
+
+}
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.team-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+.team-card-hover { 
+    transform: translateY(-10px);
+}
+.team-img {
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.team-info {
+    padding: 20px;
+}
+
+.contact-section {
+    background: var(--light);
+    padding: 100px 0;
+}
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+footer {
+    background: var(--primary);
+    color: white;
+    padding: 70px 0 20px;
+}
+.footer-links h5 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.footer-link ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+.footer-links ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-links ul li a:hover {
+    color:white;
+}
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    color: white;
+    transition: all 0.3s;
+}
+.social-icons a:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #bdc3c7;
+    
+}
+
+@media (max-width: 768px){
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero {
+        padding: 120px 0 80px;
+    }
+}      
+
+
+  /* Search Button */
+  .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #f97316;
+    color: #f97316;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .search-btn:hover {
+    background-color: #f97316;
+    color: #fff;
+    box-shadow: 0 0 10px #f97316;
+  }
