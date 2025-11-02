@@ -1,0 +1,65 @@
+
+        
+:root {
+    --bs-body-bg: #111827;
+    --bs-card-bg:#1F2937;
+    --bs-form-control-bg:#374151;
+    --bs-form-control-color: #f3f4f6;
+    --bs-border-color: #4b5563;
+    --bs-border-radius:0.75rem;
+    --bs-accent-blue:#3B82F6;
+}
+
+
+
+body {
+    font-family: 'Inter' sans-serif;
+    background-color: var(--bs-body-bg);
+}
+.login-card { 
+    background-color: var(--bs-card-bg);
+    border: 1px solid rgba (255, 255, 255, 0.1
+    );
+    border-radius: var(--bs-form-control-bg);
+    box-shadow: 0 10px 15px-3px rgba (0, 0, 0, 0.2), 0 4px 6px-2px rgba(0, 0, 0, 0.1 );
+}
+
+.form-control {
+    background-color: var(--bs-form-control-bg);
+    color: var(--bs-form-control-color);
+    border-color: var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    
+}
+
+.form-control:focus {
+    background-color: var(--bs-form-control-bg);
+    color: var(--bs-form-control-color);
+    border-color: var(--bs-accent-blue);
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+   
+}
+
+.btn-accent {
+    background-color: var(--bs-accent-green);
+    border-color: var(--bs-accent-green);
+    font-weight: 600;
+    transition: transform 0.15s ease-in-out;
+
+}
+
+.btn-accent:hover {
+    background-color: #059669;
+    border-color:#059669;
+    transform: scale(1.01);
+}
+
+.text-accent-green {
+    color: var(--bs-accent-green);
+   
+}
+
+.form-check-input:checked {
+     border-color: var(--bs-accent-green);
+     border-color: var(--bs-accent-green);
+}
